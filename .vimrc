@@ -13,20 +13,20 @@ set expandtab
 set listchars=tab:\ \ ,trail:\ 
 set list
 
-call vundle#begin()
-colorscheme industry
-set mouse=a
+" call vundle#begin()
+colorscheme evening
+" set mouse=a
 map <F2> :tabnew<CR>
 map <F3> :tabp<CR>
 map <F4> :tabn<CR>
-map <F5> :NERDTreeToggle<CR>
+"map <F5> :NERDTreeToggle<CR>
 
-let g:neocomplete#enable_at_startup = 1
+"let g:neocomplete#enable_at_startup = 1
 
 " Frage ignorieren
-let g:ycm_confirm_extra_conf = 0
+"let g:ycm_confirm_extra_conf = 0
 
-set foldmethod=manual
+" set foldmethod=manual
 " Code-Folding mit <F9>
 inoremap <F9> <C-O>za
 nnoremap <F9> za
@@ -43,14 +43,14 @@ autocmd BufWinEnter *.* silent loadview
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'fatih/vim-go'
+" Plugin 'VundleVim/Vundle.vim'
+" Plugin 'fatih/vim-go'
 " Plugin 'Valloric/YouCompleteMe'
 " Plugin 'rdnetto/YCM-Generator'
-Plugin 'scrooloose/nerdtree'
+" Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+" call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
